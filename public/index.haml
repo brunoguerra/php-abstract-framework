@@ -1,0 +1,79 @@
+/
+  Carousel
+  \==================================================
+
+#home_gallery.carousel.slide
+  %ol.carousel-indicators
+    %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+    %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+    %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+  .carousel-inner
+    .item.active
+      %img{:alt => "First slide", "src" => "#{image_url('slide_1_big.jpg')}"}/
+      .green.description
+        %h2
+          %a{:href => "social.php"}
+            Assistência às Crianças
+            %br>/
+            e Família        
+          
+        %p
+          equipes multiprofissionais capacitadas para prestar assistência às necessidades globais do crescimento e desenvolvimento da criança
+  %a.left.carousel-control{"data-slide" => "prev", :href => "#gallery"}
+    %span.icon-prev
+  %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic"}
+    %span.icon-next
+/ .carousel
+/
+  Marketing messaging and featurettes
+  \==================================================
+/ Wrap the rest of the page in another container to center all the content.
+.container.marketing
+  / Three columns of text below the carousel
+  .row
+    .col-lg-4
+      %img.img-circle{"data-src" => "holder.js/140x140"}/
+      %h2 Heading
+      %p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+      %p
+        %a.btn.btn-default{:href => "#"} View details »
+    /.col-lg-4
+    .col-lg-4
+      %img.img-circle{"data-src" => "holder.js/140x140"}/
+      %h2 Heading
+      %p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+      %p
+        %a.btn.btn-default{:href => "#"} View details »
+    /.col-lg-4
+    .col-lg-4
+      %img.img-circle{"data-src" => "holder.js/140x140"}/
+      %h2 Heading
+      %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      %p
+        %a.btn.btn-default{:href => "#"} View details »
+    /.col-lg-4
+  /.row
+  / START THE FEATURETTES
+  %hr.featurette-divider/
+  .featurette
+    %img.featurette-image.img-circle.pull-right{"data-src" => "holder.js/512x512"}/
+    %h2.featurette-heading
+      First featurette heading.
+      %span.text-muted It'll blow your mind.
+    %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+  %hr.featurette-divider/
+  .featurette
+    %img.featurette-image.img-circle.pull-left{"data-src" => "holder.js/512x512"}/
+    %h2.featurette-heading
+      Oh yeah, it's that good.
+      %span.text-muted See for yourself.
+    %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+  %hr.featurette-divider/
+  .featurette
+    %img.featurette-image.img-circle.pull-right{"data-src" => "holder.js/512x512"}/
+    %h2.featurette-heading
+      And lastly, this one.
+      %span.text-muted Checkmate.
+    %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+  %hr.featurette-divider/
+  /END THE FEATURETTES

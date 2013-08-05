@@ -1,0 +1,52 @@
+$information-small-screen: "only screen and (min-width : 768px)";
+
+
+#home_gallery {
+    .green {
+        background-color: #A7B742;
+        padding-top: 60px ;
+
+        p a {
+            background-image: url('img/dark-green-chevron-12px.png');
+            background-repeat: no-repeat;
+            background-position: right center;
+            padding-right: 10px
+        }
+
+        &:before {
+            content: ' ';
+        }
+
+        header > p,
+        a:link,
+        a:visited,
+        a:active,
+        a:focus,
+        a:hover {
+            color: #4C5E19
+        }
+
+        &.description h2 a {
+            color: #ffffff
+        }
+
+        @media #{$information-small-screen} {
+
+            &.description {
+                position: absolute
+                top: 0px ;
+                left: 21% ;
+                width: 25% ;
+                bottom: 30px ;
+            }
+        }
+    }
+
+    .orange p a {
+        background-image: url('img/dark-orange-chevron-12px.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-right: 10 px;
+    }
+
+}

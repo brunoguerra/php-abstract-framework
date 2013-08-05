@@ -1,0 +1,5 @@
+layout.psd/
+.psd
+tmp/
+.DS_Store
+**/.DS_Store
